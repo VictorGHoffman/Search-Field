@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: #1c1c22;
+            /* background: #1b1b20; */
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>SHADOW DOM</h2>
+    <div>
+        <search-field data-target="games"></search-field>
+    </div>
+    <table id="games">
+        <tr>
+            <td>Mario Bros</td>
+        </tr>
+        <tr>
+            <td>Metal Gear</td>
+        </tr>
+        <tr>
+            <td>Battlefield</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table id="movies">
+        <tr>
+            <td>1</td>
+            <td>Spider Man Across The Spider Verse</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Avengers Endgame</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Die Hard</td>
+        </tr>
+    </table>
+
+    <script src="SearchField.js"></script>
+
+</body>
+
+</html>
