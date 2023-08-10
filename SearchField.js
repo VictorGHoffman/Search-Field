@@ -124,18 +124,18 @@ class SearchField extends HTMLElement {
 
     inputFocus() {
         this.input.focus()
-        this.wrap.classList.add("foco")
+        this.wrap.classList.add("focus")
     }
 
     wrapperFocus(eventType, addClass) {
         if (addClass) {
             this.input.addEventListener(eventType, () => {
-                this.wrap.classList.add('foco')
+                this.wrap.classList.add('focus')
                 this.select.classList.remove('hidden')
             })
         } else {
             this.input.addEventListener(eventType, () => {
-                this.wrap.classList.remove('foco')
+                this.wrap.classList.remove('focus')
                 setTimeout(() => {
                     this.select.classList.add('hidden')
                 }, 75);
@@ -201,7 +201,7 @@ class SearchField extends HTMLElement {
             outline: none;
         }
 
-        .foco {
+        .focus {
             border-width: 1px 1px;
             border-style: solid;
             border-color: rgb(158, 158, 158);
